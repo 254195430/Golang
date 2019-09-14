@@ -1,15 +1,18 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	a := 15
-	fmt.Printf("a = %b\n", a)
-	fmt.Printf("%%\n")
-	ch := 'c'
-	fmt.Printf("ch = %c,%c\n", ch, 51)
-	f := 3.14
-	fmt.Printf("f = %f,%g\n", f, f)
+	arr := [...]int{0, 1, 2, 3, 4, 5, 6, 7}
+	s1 := arr[2:6]
+	fmt.Println(s1)
+	s2 := s1[3:6]
+	fmt.Println(s2)
+	s3 := append(s2, 10)
+	fmt.Println(s3)
+	fmt.Println(arr)
+	s4 := append(s3, 666)
+	fmt.Println(s4)
+	fmt.Println(arr)
+
 }
