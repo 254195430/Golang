@@ -35,8 +35,8 @@ func (a *Account) Buy(n int) {
 func main() {
 	var account Account
 	account.SetAccount(100)
-	go account.Buy(20)
+	go account.Buy(40)
 	go account.Buy(50)
-	time.Sleep(5 * time.Second)
+	time.Sleep(2 * time.Second)
 	fmt.Println(account.GetAccount())
 }
